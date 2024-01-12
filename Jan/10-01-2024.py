@@ -47,7 +47,7 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-        
+
 class Solution:
     def amountOfTime(self, root: Optional[TreeNode], start: int) -> int:
         graph=defaultdict(list)
@@ -72,4 +72,4 @@ class Solution:
                         seen.add(v)
                         queue.append(v)
             ans+=1
-        return ans                                
+        return ans
